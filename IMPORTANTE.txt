@@ -1,0 +1,19 @@
+IMPORTANTE
+
+Desenvolvi o teste em HTML, CSS e JavaScript, pois trata-se de uma landing page simples. Então, achei mais fácil e produtivo utilizar essas linguagens, pois não teria nenhuma interação com banco de dados ou algo do tipo.
+
+Para o disparo de e-mail, utilizei a biblioteca do PHPMailer e fiz a configuração de envio para mim. O formulário faz a validação e o disparo via PHP.
+
+Utilizei as bibliotecas Jquery, Bootstrap e Flickty para montagem do layout e suas funções.
+
+Como no layout não tinha logo, improvisei um texto no local como Teste Newton.
+
+Para verificar o layout, basta descompactar a pasta e abrir o index.html. 
+Para testar o envio, basta publicar em um servidor que rode PHP.
+
+No mais, estou contente em participar do processo seletivo da Newton.
+
+Daniel da Silva Augusto
+ E-mail: augusto.daniel7@outlook.com
+ Cel: (11) 96434-6576
+

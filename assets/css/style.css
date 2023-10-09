@@ -1,0 +1,434 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Segoe UI Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Segoe UI Regular'), url('../fonts/Segoe UI.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Segoe UI Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Segoe UI Italic'), url('../fonts/Segoe UI Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Segoe UI Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Segoe UI Bold'), url('../fonts/Segoe UI Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Segoe UI Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Segoe UI Bold Italic'), url('../fonts/Segoe UI Bold Italic.woff') format('woff');
+}
+
+body{
+    font-family: 'Segoe UI Regular';
+}
+
+h1{
+    font-family: 'Segoe UI Bold';
+    font-size: 24px !important;
+}
+
+li{
+    display: inline-block;
+}
+
+footer{
+    text-align: center;
+}
+
+input{
+    border-radius: 10px;
+    font-size: 15px;    
+}
+
+header{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background: #FFF;
+    box-shadow: 1px 1px 9px 2px #78747452;    
+}
+
+.menu{
+    padding: 30px 0;
+}    
+    
+.menu a{
+    color: #575756;
+    font-family: 'Segoe UI Regular';
+    font-size: 16px;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.menu a:hover{
+    color: #E42313;
+}
+
+.menu .lupa{
+    width: 15px;
+    height: 15px;
+    margin-left: 15px;    
+}
+
+.menu .lupa img{
+    color: #E42313;
+    fill: #E42313;
+}
+
+.main-carousel .carousel-cell img{
+    max-width: 100%;
+    width: 100%;
+}
+
+.flickity-page-dots{
+    margin-top: -100px;
+    position: relative;    
+}
+
+.flickity-page-dots .dot{
+    width: 20px;
+    height: 20px;    
+}
+
+.flickity-page-dots .dot.is-selected{
+    background: #FFF;
+}
+
+.overlay{
+    background: #00000055;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.logo{
+    padding: 30px 0;
+}
+
+#especialidade,
+#quem-somos{
+    margin-top: 150px;
+}
+
+#espaco .conteudo-esp,
+#especialidade .conteudo-esp,
+#quem-somos .conteudo-quem{
+    padding-top: 50px;
+    max-width: 405px;
+}
+
+#espaco .conteudo-esp h1,
+#especialidade .conteudo-esp h1,
+#quem-somos .conteudo-quem h1{
+    color: #575756;
+    font-size: 40px !important;
+    font-family: 'Segoe UI Regular';
+}
+
+#espaco .conteudo-esp p,
+#especialidade .conteudo-esp p,
+#quem-somos .conteudo-quem p{
+    font-family: 'Segoe UI Regular';   
+    font-size: 16px !important;
+}
+
+#espaco .conteudo-esp h1 span,
+#especialidade .conteudo-esp h1 span,
+#quem-somos .conteudo-quem h1 span{
+    width: 50px;
+    height: 1px;
+    background: #575756;
+    position: absolute;
+    margin: 30px 0 0 15px;
+}
+
+#espaco .conteudo-esp h2,
+#especialidade .conteudo-esp h2,
+#quem-somos .conteudo-quem h2{
+    color: #575756;
+    font-size: 32px !important;
+    font-family: 'Segoe UI Regular';
+    margin: 45px 0;
+}
+
+#quem-somos .conteudo-quem a{
+    background: #E42313;
+    color: #FFF;
+    border-radius: 10px;
+    font-family: 'Segoe UI Regular';
+    padding: 10px 35px;
+    text-decoration: none;
+    margin-top: 25px;
+    position: absolute;
+}
+
+#espaco .conteudo-esp,
+#especialidade .conteudo-esp{
+    max-width: 100%;
+}
+
+#espaco .conteudo-esp p,    
+#especialidade .conteudo-esp p{    
+    max-width: 405px;
+}
+
+#espaco .conteudo-esp h2,
+#especialidade .conteudo-esp h2{
+    max-width: 405px;
+}
+
+#espaco{
+    background: url(../img/bg-espaco.png) no-repeat #FBFBFB;
+    margin: 70px 0;
+    padding: 70px 0;
+    background-size: contain;
+}
+
+#espaco .flickity-prev-next-button{
+    top: -4%;
+    background: transparent;
+    border-radius: 0;
+    height: 35px;
+    width: 55px;
+    border: 1px solid #575756;    
+}
+
+#espaco .flickity-prev-next-button.next{
+    right: 77%;
+}
+
+#espaco .flickity-button-icon{
+    fill: #575756;
+}
+
+#contato{
+    text-align: center;
+}
+
+#contato h2{
+    color: #575756;
+    font-size: 32px !important;
+    font-family: 'Segoe UI Regular';
+}
+
+#contato p{
+    max-width: 380px;
+    margin: 15px auto;
+}
+
+#contato .canais li{
+    padding: 8px 15px;
+    background: #FBFBFB;
+    margin-right: 15px;
+    border-radius: 12px;
+    color: #E42313;    
+    font-family: 'Segoe UI Regular';
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#form-contato{
+    background: #FBFBFB;
+    box-shadow: 7px 7px 15px #9C9C9C29;
+    border-radius: 10px;
+    padding: 50px 50px 20px;
+}
+
+#form-contato input,
+#form-contato select,
+#form-contato textarea{
+    background: #F1F1F1BD;
+    border-radius: 20px;
+    border: none;
+    width: 100%;
+    height: 45px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+#form-contato textarea{
+    height: 170px;
+    padding: 5px 15px;
+}
+
+#form-contato a{
+    background: #E42313;
+    color: #FFF;
+    border-radius: 10px;
+    font-family: 'Segoe UI Regular';
+    border: none;
+    padding: 10px 30px;
+    float: right;    
+    cursor: pointer;
+}
+
+#form-contato #sucesso{
+    display: none;
+}
+
+footer{
+    background: #575756;
+    margin-top: 50px;
+    padding: 35px 0 25px;
+}
+
+footer ul{
+    padding: 0;
+}
+
+footer a,
+footer p{
+    color: #FFF;
+    font-family: 'Segoe UI Regular';
+    text-decoration: none;
+}
+
+footer a{
+    margin: 0 5px;
+}
+
+footer .linha{
+    border-top: 1px solid #FFF;
+    padding-top: 20px;
+    margin-top: 10px;    
+}
+
+footer .redes{
+    float: right;
+    margin-top: -43px;    
+}
+
+footer .redes img{
+    margin: 0px 5px;
+}
+
+#form-contato input.error,
+#form-contato select.error,
+#form-contato textarea.error{
+    border: 1px solid #F00;
+}
+
+.menu-mobile{
+    display: none;
+}
+
+@media (max-width: 1024px) { 
+    main{
+        padding-top: 95px;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menu.open-mobile{
+        position: fixed;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: #FFF;
+        z-index: 1;
+        text-align: left;
+        -webkit-transition: fadeIn 1s ease-in-out;
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    .menu.open-mobile li{
+        display: block;
+        margin: 25px 0;
+    }
+
+    .menu.open-mobile a{
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .mobile-nav-button{
+        position: absolute;
+        margin: 0.3rem 0.5rem 0;
+        right: 0;
+        top: 0;
+        z-index: 9999;
+        cursor: pointer;
+        width: 33px;
+        height: 30px;        
+    }
+
+    .mobile-nav-button .mobile-nav-button__line{
+        width: 80%;
+        height: 3px;
+        background: #E42313;
+        border: 1px solid #E42313;
+        position: relative;
+        -webkit-transition: 1s ease;
+        transition: 1s ease;
+        margin-bottom: 5px;
+    }
+
+    .menu-mobile{
+        display: block;
+        position: absolute;
+        text-align: right;
+        top: 30px;
+    }
+
+    .logo {
+        padding: 30px 15px;
+    }
+
+    img{
+        max-width: 100%;
+    }
+
+    .flickity-page-dots{
+        margin-top: -50px;
+    }
+
+    #especialidade, #quem-somos {
+        margin-top: 90px;
+    }
+
+    #espaco .flickity-prev-next-button{
+        top: 110%;
+    }
+
+    #espaco .flickity-prev-next-button.next {
+        right: 65%;
+    }
+
+    #espaco{
+        margin: 30px 0;
+        padding: 30px 0 70px;
+    }
+
+    #contato .canais li {
+        padding: 8px 10px;
+        margin-right: 6px;
+        font-size: 13px;
+    }        
+
+    footer .redes{
+        float: none;
+        margin-top: 0;
+    }
+
+    footer a, footer p{
+        font-size: 14px;
+    }
+}

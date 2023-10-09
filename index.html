@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Teste Newton">
+  
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/flickity.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  
+  <title>Teste Newton</title>
+
+</head>
+
+<body>
+  <header>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-sm-6 logo">
+            <h1>Teste Newton</h1>
+          </div>
+          <div class="col-lg-6 col-sm-6 menu-mobile">
+              <div class="mobile-nav-button" onclick="AbreMenu();">
+                  <div class="mobile-nav-button__line"></div>
+                  <div class="mobile-nav-button__line"></div>
+                  <div class="mobile-nav-button__line"></div>
+              </div>
+          </div>          
+          <div class="col-lg-6 text-right menu">
+            <ul>
+              <li>
+                <a href="#" onclick="Menu('quem-somos')">Quem somos</a>
+              </li>
+              <li>
+                <a href="#" onclick="Menu('especialidade')">Especialidades</a>
+              </li>
+              <li>
+                <a href="#" onclick="Menu('espaco')">Blog</a>
+              </li>
+              <li>
+                <a href="#" onclick="Menu('contato')">Contato</a>
+              </li>
+              <li class="lupa">
+                <img class="svg icon-search" src="assets/img/search.svg">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header> 
+  <main>
+    <section>
+        <div class="main-carousel">
+          <div class="carousel-cell">
+            <div class="overlay"></div>
+            <img src="assets/img/bg_header1.jpg" alt="Personal Chef" >
+          </div>
+          <div class="carousel-cell">
+            <div class="overlay"></div>
+            <img src="assets/img/bg_header1.jpg" alt="Personal Chef" >
+          </div>
+          <div class="carousel-cell">
+            <div class="overlay"></div>
+            <img src="assets/img/bg_header1.jpg" alt="Personal Chef" >
+          </div>
+        </div>
+    </section>
+
+    <section id="quem-somos">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="assets/img/Quem-somos.png" alt="Quem somos">
+          </div>
+
+          <div class="col-lg-6 conteudo-quem">
+            <h1>Quem Somos <span></span></h1>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut finibus ante nec nisl volutpat aliquam. Fusce at dui pulvinar, efficitur diam ac, fringilla libero. Aenean gravida posuere ligula in pretium. Donec id eros non nisi vulputate dapibus. Donec eu malesuada dolor. Aliquam risus urna, finibus in vehicula ut, sollicitudin at elit.</p>
+            <a href="#">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="especialidade">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 conteudo-esp">
+            <h1>Nossa equipe<span></span></h1>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut finibus ante nec nisl volutpat aliquam. Fusce at dui pulvinar, efficitur diam ac, fringilla libero. Aenean gravida posuere ligula in pretium. Donec id eros non nisi vulputate dapibus. Donec eu malesuada dolor. Aliquam risus urna, finibus in vehicula ut, sollicitudin at elit.</p>
+          </div>
+
+          <div class="col-lg-6">
+            <img src="assets/img/Especialidades.png" alt="Especialidades">
+          </div>
+        </div>
+      </div>
+    </section>   
+
+    <section id="espaco">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 conteudo-esp">
+            <h1>Nosso espaço<span></span></h1>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut finibus ante nec nisl volutpat aliquam. Fusce at dui pulvinar, efficitur diam ac, fringilla libero. Aenean gravida posuere ligula in pretium. Donec id eros non nisi vulputate dapibus. Donec eu malesuada dolor. Aliquam risus urna, finibus in vehicula ut, sollicitudin at elit.</p>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="main-carousel-esp">
+                <div class="carousel-cell">
+                  <img src="assets/img/Espaco.png" alt="Espaco">
+                </div>
+                <div class="carousel-cell">
+                  <img src="assets/img/Espaco.png" alt="Espaco">
+                </div>
+                <div class="carousel-cell">
+                  <img src="assets/img/Espaco.png" alt="Espaco">
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2">
+            <h2>Fale Conosco</h2>
+            <p>Quer conversar com a Health Clinic? Basta preencher o formulário abaixo e nós entraremos em contato assim que possível!</p>
+
+            <div class="canais">
+              <ul>
+                <li><img src="assets/img/phone.svg" alt="Telefone"> Telefone</li>
+                <li><img src="assets/img/whatsApp.svg" alt="WhatsApp"> WhatsApp</li>
+                <li><img src="assets/img/wechat.svg" alt="Wechat"> Wechat</li>
+              </ul>
+            </div>
+
+            <form id="form-contato" action="" method="POST">
+              <div class="row" id="formulario">
+                <div class="col-lg-6">
+                  <input type="text" name="nome" placeholder="Nome" id="nome">
+                  <input type="email" name="email" placeholder="E-mail" id="email">
+                  <select name="assunto" id="assunto">
+                    <option value=" ">Assunto</option>
+                    <option value="duvidas">Dúvidas</option>
+                    <option value="reclamacoes">Reclamações</option>
+                  </select>
+                </div>
+                <div class="col-lg-6">
+                  <textarea name="mensagem" placeholder="Mensagem" id="mensagem"></textarea>
+                  <a id="enviar" onclick="Formulario();">Enviar</a>
+                </div>
+              </div>
+              <div id="sucesso">
+                <p>Formulário enviado com sucesso.</p>
+              </div>
+            </form>            
+          </div>
+        </div>
+      </div>      
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <ul>
+              <li>
+                <a href="#" onclick="Menu('quem-somos')">Quem somos</a>
+              </li>
+              <li>
+                <a href="#" onclick="Menu('especialidade')">Especialidades</a>
+              </li>
+              <li>
+                <a href="#" onclick="Menu('espaco')">Blog</a>
+              </li>
+              <li>
+                <a href="#" onclick="Menu('contato')">Contato</a>
+              </li>
+            </ul>
+            <div class="redes">
+              <ul>
+                <li><img src="assets/img/linkedin.svg" alt="linkedin"></li>
+                <li><img src="assets/img/facebook.svg" alt="Facebook"></li>
+                <li><img src="assets/img/instagram.svg" alt="Instagram"></li>
+              </ul>
+            </div>            
+          </div>
+        </div>
+        <div class="row linha">
+          <div class="col-lg-6 offset-lg-3">
+            <p>Health Clinic São Paulo - Todos os Direitos Reservados.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
+
+<script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-3.6.3.min.js"></script>
+<script type="text/javascript" src="assets/js/flickity.pkgd.min.js"></script>
+<script type="text/javascript" src="assets/js/scripts.js"></script>
